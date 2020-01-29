@@ -1,0 +1,56 @@
+@media (min-width: 768px) {
+  #root {
+    padding: 0 10%;
+  }
+}
+
+.playfield {
+  padding: 0 30%;
+}
+@media (max-width: 576px) {
+  .playfield {
+    padding: 0 10%;
+  }
+}
+@media (max-width: 1366) {
+  .playfield {
+    padding: 0 20%;
+  }
+}
+
+.scoreboard {
+  height: 6em;
+}
+.scoreboard .h2 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+@media (min-width: 576px) {
+  .scoreboard {
+    padding: 0 10%;
+  }
+}
+.square {
+  transition-duration: 0.2s;
+  height: 3em;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+.square:hover {
+  cursor: pointer;
+  background-color: #dc3545 !important;
+}
+.square.selected:hover {
+  cursor: not-allowed;
+  background-color: #343a40 !important;
+}
+
+.reset {
+  height: 50vh;
+  width: 100%;
+}
+.reset .row {
+  margin-top: 10%;
+}
