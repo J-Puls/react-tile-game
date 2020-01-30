@@ -5,9 +5,20 @@ import Col from "react-bootstrap/Col";
 
 const Reset = props => {
   let message;
-  props.winner === 0
-    ? (message = "It's a Tie!")
-    : (message = "Player " + props.winner + " Wins!");
+
+  switch (props.winner){
+    case 0:
+      message = "It's a Tie!";
+      break;
+    case 1:
+      message = "Player Wins!";
+        break;
+    case 2:
+      message = message = "CPU Wins!";
+      break;
+    default:
+      break;
+  }
 
   return (
     <Container className="reset">

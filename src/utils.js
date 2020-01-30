@@ -48,7 +48,7 @@ export const consumeSquare = (list, item, func, val) => {
 
 export const consumeIndex = (arr, item) => {
     const newArr = arr.filter(val => {
-        return val != item;
+        return val !== item;
     })
     return newArr;
 }
@@ -76,7 +76,7 @@ export const handleClick = (e, availS, sqs, setAvailSq, turn, availInd, setAvail
             }
         }
         const newIndexes = availInd.filter(val => {
-            return val != blockId;
+            return val !== blockId;
         })
         setAvailI(newIndexes)
         setP1(p1s + value);
