@@ -2,7 +2,7 @@
 ## What Is It?
 React Tile Game is a simple progressive web app built with React and React-Bootstrap.
 ## How To Play
-The goal of the game is to take turn selecting numbered tiles against a CPU opponent. The game ends when all tiles have been selected, displaying a winner and giving the option to play again.
+The goal of the game is to take turns selecting numbered tiles against a CPU opponent. The game ends when all tiles have been selected, displaying a winner and giving the option to play again.
 ## Difficulty Settings
 <strong>Three difficulty settings are featured in this game.</strong></br>  
 <strong>Easy:</strong>  
