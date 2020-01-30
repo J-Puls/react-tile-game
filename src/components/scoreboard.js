@@ -22,7 +22,7 @@ const Scoreboard = props => {
       <Col xs="4" className={p1Bg}>
         <Row>
           <Col xs="12">
-            <p className="h4">P1:</p>
+            <p className="h4">Player</p>
           </Col>
           <Col xs="12">
             <p className="h2">{p1Score}</p>
@@ -35,7 +35,7 @@ const Scoreboard = props => {
       <Col xs="4" className={p2Bg}>
         <Row>
           <Col xs="12">
-            <p className="h4">P2:</p>
+            <p className="h4">CPU</p>
           </Col>
           <Col xs="12">
             <p className="h2">{p2Score}</p>
