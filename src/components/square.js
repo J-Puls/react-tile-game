@@ -5,7 +5,7 @@ export const ActiveSquare = props => {
   return (
     <Col
       xs="2"
-      className={"shadow bg-primary square rounded border"}
+      className={"shadow bg-light square rounded "}
       onClick={props.handleClick}
       index={props.index}
     >
@@ -20,12 +20,8 @@ export const InactiveSquare = props => {
   return (
     <Col
       xs="2"
-      className={"shadow bg-dark square rounded border selected"}
+      className={"shadow bg-transparent square rounded selected"}
       index={props.index}
-    >
-      <p className="text-center text-light lead mt-2" index={props.index}>
-        X
-      </p>
-    </Col>
+    ></Col>
   );
 };

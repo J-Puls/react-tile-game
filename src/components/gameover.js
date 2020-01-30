@@ -3,16 +3,16 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-const Reset = props => {
+const GameOver = props => {
   let message;
 
-  switch (props.winner){
+  switch (props.winner) {
     case 0:
       message = "It's a Tie!";
       break;
     case 1:
-      message = "Player Wins!";
-        break;
+      message = "You Win!";
+      break;
     case 2:
       message = message = "CPU Wins!";
       break;
@@ -24,7 +24,7 @@ const Reset = props => {
     <Container className="reset">
       <Row className="flex-column">
         <Col>
-          <p className="display-4 text-center">{message}</p>
+          <p className="display-4 text-center text-light">{message}</p>
         </Col>
         <Col
           xs="4"
@@ -37,4 +37,4 @@ const Reset = props => {
     </Container>
   );
 };
-export default Reset;
+export default GameOver;

@@ -1,10 +1,9 @@
-@media (min-width: 768px) {
-  #root {
-    padding: 0 10%;
-  }
+body {
+  background: #101010 !important;
 }
 
 .playfield {
+  height: 90%;
   padding: 0 30%;
 }
 @media (max-width: 576px) {
@@ -19,13 +18,17 @@
 }
 
 .scoreboard {
-  height: 6em;
+  margin-top: 10px;
+  height: 10%;
+  color: white;
 }
 .scoreboard .h2 {
   margin-bottom: 0;
   padding-bottom: 0;
 }
-
+.scoreboard .col-4 {
+  border-radius: 5px !important;
+}
 @media (min-width: 576px) {
   .scoreboard {
     padding: 0 10%;
@@ -37,14 +40,18 @@
   -moz-user-select: -moz-none;
   -khtml-user-select: none;
   -webkit-user-select: none;
+  border: 2px solid#101010 !important;
+  text-align: center;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 .square:hover {
   cursor: pointer;
   background-color: #dc3545 !important;
 }
 .square.selected:hover {
-  cursor: not-allowed;
-  background-color: #343a40 !important;
+  cursor: default;
+  background-color: transparent !important;
 }
 
 .reset {
@@ -53,4 +60,23 @@
 }
 .reset .row {
   margin-top: 10%;
+}
+.nav-link {
+  color: white;
+}
+.nav-link:hover {
+  background: #222222 !important;
+  color: white !important;
+}
+.easy.active {
+  background: #28a745 !important;
+}
+
+.med.active {
+  background: #ffc107 !important;
+  color: black !important;
+}
+
+.hard.active {
+  background: #dc3545 !important;
 }
