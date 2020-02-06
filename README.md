@@ -1,4 +1,5 @@
 # React Time Game
+View the live demo at https://react-tile-game.now.sh/  
 ## What Is It?
 React Tile Game is a simple progressive web app built with React and React-Bootstrap.
 ## How To Play
