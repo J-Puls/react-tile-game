@@ -20,10 +20,15 @@ const Scoreboard = props => {
   props.playerTurn === 1 ? (player = "Player") : (player = "CPU");
 
   return (
-    <Container>
-      <Row className="mx-0 text-center scoreboard">
+    <Container className="mt-2 text-light text-center">
+      <Row className="mx-0 scoreboard">
         <Col xs="12" className="px-0">
-          <Nav fill variant="pills" defaultActiveKey={"easy"} className="pb-1">
+          <Nav
+            justify
+            variant="pills"
+            defaultActiveKey={"easy"}
+            className="pb-1"
+          >
             <Nav.Item>
               <Nav.Link
                 eventKey="easy"
@@ -56,7 +61,7 @@ const Scoreboard = props => {
             </Nav.Item>
           </Nav>
         </Col>
-        <Col xs="4" className={p1Bg}>
+        <Col xs="6" className={p1Bg}>
           <Row>
             <Col xs="12">
               <p className="h5 mb-0">PLAYER</p>
@@ -66,10 +71,7 @@ const Scoreboard = props => {
             </Col>
           </Row>
         </Col>
-        <Col xs="4">
-          <p className="h4 pt-4">{player}</p>
-        </Col>
-        <Col xs="4" className={p2Bg}>
+        <Col xs="6" className={p2Bg}>
           <Row>
             <Col xs="12">
               <p className="h5 mb-0">CPU</p>

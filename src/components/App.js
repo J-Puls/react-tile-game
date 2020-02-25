@@ -14,8 +14,8 @@ const App = () => {
   const [winner, setWinner] = useState(null);
   const [mode, setMode] = useState(1);
   const [reset, setReset] = useState(false);
+
   // Randomize block values after first render
-  
   useEffect(
     () =>
       utils.init(setAvailableIndexes, setAvailableSquares, setSquares, mode),
@@ -57,9 +57,11 @@ const App = () => {
   }, [playerTurn]);
 
   // Update winner after a turn is completed
-  useEffect(() => utils.getWinner(p1Score, p2Score, setWinner), [
-    availableSquares
-  ]);
+  useEffect(() => {
+    if (p1Score > p2Score) setWinner(1);
+    else if (p2Score > p1Score) setWinner(2);
+    else setWinner(0);
+  });
 
   // Resets everything to initial state and randomizes blocks
   const resetGame = () => {

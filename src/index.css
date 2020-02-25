@@ -1,7 +1,6 @@
 body {
   background: #101010 !important;
 }
-
 .playfield {
   height: 90%;
   padding: 0 30%;
@@ -16,11 +15,8 @@ body {
     padding: 0 20%;
   }
 }
-
 .scoreboard {
-  margin-top: 10px;
   height: 10%;
-  color: white;
 }
 .scoreboard .h2 {
   margin-bottom: 0;
@@ -34,32 +30,14 @@ body {
     padding: 0 10%;
   }
 }
-.square {
-  transition-duration: 0.2s;
-  height: 3em;
-  -moz-user-select: -moz-none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  border: 2px solid#101010 !important;
-  text-align: center;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
 .square:hover {
   cursor: pointer;
   background-color: #dc3545 !important;
+  color: #fafafa;
 }
 .square.selected:hover {
   cursor: default;
   background-color: transparent !important;
-}
-
-.reset {
-  height: 50vh;
-  width: 100%;
-}
-.reset .row {
-  margin-top: 10%;
 }
 .nav-link {
   color: white;
