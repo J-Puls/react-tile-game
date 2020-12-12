@@ -30,7 +30,19 @@ body {
     padding: 0 10%;
   }
 }
-.square:hover {
+
+.square {
+  transition-duration: 0.2s;
+  height: 3em;
+  text-align: center;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.square.active {
+  background: #fafafa;
+  border: 2px solid #101010;
+}
+.square.active:hover {
   cursor: pointer;
   background-color: #dc3545 !important;
   color: #fafafa;
